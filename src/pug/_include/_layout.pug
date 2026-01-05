@@ -1,0 +1,22 @@
+//- 設定読み込み
+include _config
+
+//- 設定の上書き
+block variables
+
+doctype html
+html(lang=lang)
+  head
+    //- head読み込み
+    include _head
+
+  body
+    include _page/_header
+    main.l-main
+      //- コンテンツ
+      block content
+
+    include _page/_footer
+    //- JS読み込み
+    include _js
+    

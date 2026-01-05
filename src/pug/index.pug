@@ -1,0 +1,25 @@
+extend _include/_layout
+
+//- 設定の上書き
+append variables
+  //- Require
+
+  //- Optional
+  - var og_type = "website";
+
+  //- ルート
+  - var root_img = root + "assets/img/";
+  - var root_link  = "";
+
+//- CSS追加
+append css
+  link(rel="stylesheet" href=root + "assets/css/top.css")
+
+//- JS追加
+append js
+  script(type="text/javascript" src=root + "assets/js/top.min.js" defer)
+
+//- コンテンツ
+block content
+  section.teet(style="margin:1000px 0;")
+    | test

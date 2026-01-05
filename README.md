@@ -1,1 +1,1 @@
-# coding-template
+# codeing-template

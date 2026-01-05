@@ -1,0 +1,38 @@
+@use "../global" as g;
+
+/* --------------------------------------------------------------------------
+  container
+-------------------------------------------------------------------------- */
+%c-container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+}
+
+.c-container {
+  @extend %c-container;
+
+  max-width:inherit;
+  padding:0 20px;
+
+  @include g.mq(md) {
+    max-width: 1400px + 40;
+    padding:0 20px;
+  }
+}
+
+.c-container-1600px {
+  @extend %c-container;
+
+  @include g.mq(md) {
+    max-width: 1600px + 40;
+    padding: 0 20px;
+  }
+
+  @include g.mq(sm) {
+    padding: 0 20px;
+  }
+}
+

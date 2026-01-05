@@ -1,0 +1,26 @@
+extend ../_include/_layout
+
+//- 設定の上書き
+append variables
+  //- Require
+  - var title = '';
+  - var site_name = '';
+  - var description = '';
+  - var slug = 'under'
+  //- Optional
+  - var root = "../";
+  - var root_img = root + "assets/img/";
+  - var root_img_under = root + "assets/img/under/";
+  - var root_link  = "../";
+
+//- CSS追加
+append css
+  link(rel="stylesheet" href=root + "assets/css/under.css")
+
+//- JS追加
+append js
+  script(type="text/javascript" src=site_url + "assets/js/under.min.js")
+
+//- コンテンツ
+block content
+  
